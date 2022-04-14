@@ -3,14 +3,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: rgb(0, 0, 0);
+  color: rgb(214,214,214);
 }
 li,
 a,
 button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
 }
 .nav_container{
@@ -18,44 +18,43 @@ button {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0% 5%;
+    padding: 0% 4%;
     position: relative;
-    background-color: aquamarine;
+    background-color: rgb(49,49,50);
+    opacity: 90%;
 }
 .nav_container a{
   margin-right: auto;
 }
 .nav_logo{
-  max-width: 70px;
-  max-height: 70px;
+  /* max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%; */
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 2px solid rgb(214,214,214);
+  border-radius: 50%;
 }
 .items{
     display: inline-block;
     padding: 0px 30px;
 }
 .items a {
-    transition: all 0.3s ease 0s;
+    transition: all 200ms ease-in-out;
     text-transform: uppercase;
   }
   .items a:hover {
-    color:rgb(15,130,144);
+    color:rgb(255, 255, 255);
+    border-bottom: 2px solid white;
   }
  .btn{
     padding: 9px 25px;
-    background-color: rgb(15,130,144);
     color:rgb(255, 255, 255);
     border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
     margin-left: 20px;
     display: none;
   }
-  button:hover {
-    background-color: rgb(26, 175, 195);
-    color:rgb(0, 0, 0);
-  }
-
   @media screen and (max-width:766px){
     .nav_container{
       display: flex;
@@ -77,7 +76,7 @@ button {
         display:grid;
         position: relative;
         align-self: end;
-        margin-top: 2px;
+        margin: 10px 0;
     }
     .nav_logo{
       display: none;

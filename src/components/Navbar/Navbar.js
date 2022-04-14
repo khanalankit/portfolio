@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
-import logo from "../../assets/logo.png"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons'
+import logo from "../../assets/logo.jpeg"
 import '../Navbar/Navbar.css'
 
 const Navbar = () => {
@@ -26,16 +28,16 @@ useEffect(()=>{
     <div className='nav_container'>
         <NavLink to="/"><img className='nav_logo' src={logo} alt='logo'/></NavLink>
         {(toggle || screenWidth>766)&& (
+                  <nav>
                       <ul className='list'>
                       <li className='items'><NavLink to="/">Home</NavLink></li>
                       <li className='items'><NavLink to="/My_Projects">My Projects</NavLink></li>
                       <li className='items'><NavLink to="/Contact_Me">Contact Me</NavLink></li>
                       <li className='items'><NavLink to="/About_Me">About Me</NavLink></li>
                   </ul>
+                  </nav>
         )}
-        <nav>
-        </nav>
-        <button className='btn' onClick={toggleFlip}>MENU</button>
+        <FontAwesomeIcon icon={faBars} className='btn' onClick={toggleFlip}></FontAwesomeIcon>
     </div>
   )
 }
