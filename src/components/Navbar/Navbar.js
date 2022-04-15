@@ -30,10 +30,10 @@ useEffect(()=>{
         {(toggle || screenWidth>766)&& (
                   <nav>
                       <ul className='list'>
-                      <li className='items'><NavLink to="/">Home</NavLink></li>
-                      <li className='items'><NavLink to="/My_Projects">My Projects</NavLink></li>
-                      <li className='items'><NavLink to="/Contact_Me">Contact Me</NavLink></li>
-                      <li className='items'><NavLink to="/About_Me">About Me</NavLink></li>
+                      <li className='items' onClick={toggleFlip}><NavLink to="/">Home</NavLink></li>
+                      <li className='items' onClick={toggleFlip}><NavLink to="/My_Projects">My Projects</NavLink></li>
+                      <li className='items' onClick={toggleFlip}><NavLink to="/Contact_Me">Contact Me</NavLink></li>
+                      <li className='items' onClick={toggleFlip}><NavLink to="/About_Me">About Me</NavLink></li>
                   </ul>
                   </nav>
         )}

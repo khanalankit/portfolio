@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import "./Contact_me.css"
+import screen from "../assets/screen.jpg";
 const Contact_me = () => {
   const [name,setName]= useState("");
   const [email,setEmail]= useState("");
@@ -19,6 +20,8 @@ const Contact_me = () => {
       setMessage("")
     }
   }
+var nameRegex = /^[ a-zA-Z]+$/;
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
   const formValidation = ()=>{
     const nameErr = {};
@@ -30,9 +33,20 @@ const Contact_me = () => {
       isValid = false;
 
     }
-    if(!email.includes("@gmail.com")){
-      emailErr.email123 = "Invalid mail!!";
-      isValid= false;
+    else if(!name.match(nameRegex)){
+      nameErr.numName = "Invalid name";
+      isValid = false;
+
+    }
+    if(email.trim().length<1){
+      emailErr.emailemp = "Email is required";
+      isValid = false;
+
+    }
+    else if(!email.match(emailRegex)){
+      emailErr.emailName = "Invalid email";
+      isValid = false;
+
     }
     if (message.trim().length<10){
       messageErr.msgtxt = "atleast 10 letters is required!!";
