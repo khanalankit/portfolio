@@ -17,13 +17,16 @@
     .card_header{
         font-size: 20px;
     }
-    .card_footer{
+    .card_body{
+        text-align: center;
+    }
+    /* .card_footer{
         background-color: #4b4b4b;
         display: flex;
-    }
+    } */
     button{
         font-size: 16px;
-        padding: 5px;
+        padding: 10px;
         background-color: #323232;
         border: none;
         color: rgb(214,214,214);
@@ -31,4 +34,7 @@
     button:hover{
         background-color:rgb(174, 168, 168) ;
         color: black;
+    }
+  .pic{
+        width: 200px;
     }
