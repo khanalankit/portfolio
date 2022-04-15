@@ -18,7 +18,7 @@ a{
     align-items: center;
     padding: 0% 4%;
     position: fixed;
-    background-color: rgb(49,49,50);
+    background-color: #181818;
     opacity: 100%;
 }
 .nav_container a{
