@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Playfair+Display&family=Roboto+Slab&family=Roboto:wght@700&display=swap');
+
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #e7e2e2;
+}
+.des_container{
+    align-self: center;
+    padding-left: 4%;
+}
+.des_container h1{
+    font-size: 80px;
+    font-family: 'Roboto Slab', serif;
+    line-height: 75px;
+}
+.des_container p{
+    font-size: 22px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.profile{
+    margin-top: -10vh;
+}

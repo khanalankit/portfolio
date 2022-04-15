@@ -3,15 +3,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: rgb(214,214,214);
+  text-decoration: none;
 }
 li,
-a,
-button {
+a{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  text-decoration: none;
 }
 .nav_container{
     display: flex;
@@ -19,17 +17,14 @@ button {
     justify-content: center;
     align-items: center;
     padding: 0% 4%;
-    position: relative;
+    position: fixed;
     background-color: rgb(49,49,50);
-    opacity: 90%;
+    opacity: 100%;
 }
 .nav_container a{
   margin-right: auto;
 }
 .nav_logo{
-  /* max-width: 60px;
-  max-height: 60px;
-  border-radius: 50%; */
   width: 80px;
   height: 80px;
   object-fit: contain;
@@ -43,6 +38,7 @@ button {
 .items a {
     transition: all 200ms ease-in-out;
     text-transform: uppercase;
+    color: rgb(214,214,214);
   }
   .items a:hover {
     color:rgb(255, 255, 255);
@@ -74,7 +70,6 @@ button {
     }
     .btn{
         display:grid;
-        position: relative;
         align-self: end;
         margin: 10px 0;
     }
