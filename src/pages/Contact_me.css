@@ -1,65 +1,67 @@
 .contact_container{
+   padding: 5vh 0 0 5vw;
    height: 100vh;
-   padding: 10vh 0 0 5vw;
    display: flex;
    justify-content: flex-start;
    background-color: #e6e6e6;
 }
-#contact-form{
-    max-width: 50vw;
-    display: flex;
-    margin: 10vh 5vw 10vh 5vw;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4% 0 4% 4%;
-    background-color: #656565;
-    /* opacity: 80%; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color:white;
-    border-radius: 1%;
+form{
+  max-width: 600px;
+  width: 90%;
+  /* max-height: 80vh; */
+  background: white;
+  margin: 10vh auto 5vh auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.contactMe{
+  margin: 5px auto 10px auto;
+  text-align: center;
+}
+label{
+  display: block;
+  margin: 20px 0;
+  font-size: 18px;
+}
+input,textarea
+ {
+  width: 100%;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 5px;
+  resize: none;
+  max-height: 5vh;
+  
 }
 #submit {
-    margin-top: 2%;
-    width: 90%;
-    justify-self: center;
-    align-items: center;
+    margin: 5% auto 0px 7%;
+    width: 85%;
+    /* justify-self: center; */
+    /* align-items: center; */
     height: 30px;
     font-size: 16px;
-    border-width: 0px;
-    padding: 5px;
+    /* border-width: 0px; */
+    padding: 15px 0 30px 0;
     background-color: #181818;
-    /* border: none; */
     color: rgb(214,214,214);
     cursor: pointer;
-  }
-label{
-      font-size: 18px;
   }
   #submit:hover {
     background-color:rgb(236, 236, 236) ;
     color: black;
     border-width: 0px;
   }
-input[type="text"],
-input[type="email"]
- {
-  width: 90%;
-  height: 80px;
-  font-size: 16px;
-  border-radius: 5px;
-  border-width: 0px;
-}
-/* input[type="text"]:focus,
-input[type="email"]:focus
+
+input:focus,
+textarea:focus
 {
-  height: 100px;
-  border: 0px;
-} */
-#textarea {
-    width: 90%;
-    height: auto;
-    font-size: 16px;
-  }
+  border-bottom: 1px solid black;
+}
 .message_text{
     font-size: 18px;
 }

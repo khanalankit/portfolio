@@ -26,4 +26,14 @@
 .profile{
     margin-top: -10vh;
 }
+.home_Btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+@media screen and (max-width:965px){
+    .profile{
+        display: none;
+    }
+}
 
