@@ -1,8 +1,6 @@
 .contact_container{
-   padding: 5vh 0 0 5vw;
+   padding: 5vh 5vh 0 5vw;
    height: 100vh;
-   display: flex;
-   justify-content: flex-start;
    background-color: #e6e6e6;
 }
 form{
@@ -14,6 +12,8 @@ form{
   padding: 40px;
   border-radius: 3px;
   box-sizing: border-box;
+  display: flex;
+  gap: 50px;
 }
 .contactMe{
   margin: 5px auto 10px auto;
@@ -64,4 +64,15 @@ textarea:focus
 }
 .message_text{
     font-size: 18px;
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid red;
+  gap: 50px;
+
+}
+.icons{
+ height: 50px;
 }
