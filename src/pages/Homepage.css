@@ -5,7 +5,7 @@
     justify-content: space-between;
     height: 100vh;
     overflow: hidden;
-    background-color: #e6e6e6;
+    background-color: rgb(67, 67, 67);
 }
 .des_container{
     align-self: center;
@@ -13,15 +13,19 @@
 }
 .des_container h1{
     font-size: 80px;
-    font-family: 'Roboto Slab', serif;
     line-height: 75px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 .des_container p{
-    font-size: 22px;
-    font-family: 'Be Vietnam Pro', sans-serif;
     padding-top: 30px;
     padding-bottom: 40px;
-    font-size: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
 }
 .profile{
     margin-top: -10vh;

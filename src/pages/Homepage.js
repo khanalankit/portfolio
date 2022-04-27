@@ -15,10 +15,10 @@ const Homepage = () => {
         </p>
         <div className="home_Btn">
           <a href={resume} download="resume">
-            <button type="button">Download CV</button>
+            <button type="button">DOWNLOAD CV</button>
           </a>
           <a href="/Contact_Me">
-            <button type="button">Contact Me</button>
+            <button type="button">CONTACT ME</button>
           </a>
         </div>
       </div>

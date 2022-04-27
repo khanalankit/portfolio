@@ -133,15 +133,47 @@ const Contact_me = () => {
         </div>
         <div className="socials">
           <div className="vertical_social">
-            <FontAwesomeIcon className="icons" icon={faHome} />
-            <FontAwesomeIcon className="icons" icon={faPhone} />
-            <FontAwesomeIcon className="icons" icon={faEnvelope} />
+            <div className="info">
+              <FontAwesomeIcon className="icons" icon={faHome} />
+              <p>Kupondole,Lalitpur</p>
+            </div>
+            <div className="info">
+              <FontAwesomeIcon className="icons" icon={faPhone} />
+              <p>+977 9848941269</p>
+            </div>
+            <div className="info">
+              <FontAwesomeIcon className="icons" icon={faEnvelope} />
+              <p>dsrsangautam@gmail.com</p>
+            </div>
           </div>
           <div className="horizontal_socials">
-            <FontAwesomeIcon className="icons" icon={faGithub} />
-            <FontAwesomeIcon className="icons" icon={faFacebook} />
-            <FontAwesomeIcon className="icons" icon={faInstagram} />
-            <FontAwesomeIcon className="icons" icon={faLinkedin} />
+            <a href="https://github.com/darsan012" target="_blank">
+              <FontAwesomeIcon className="icons" id="github" icon={faGithub} />
+            </a>
+            <a href="https://www.facebook.com/darsan.gautam.9" target="_blank">
+              <FontAwesomeIcon
+                className="icons"
+                id="facebook"
+                icon={faFacebook}
+              />
+            </a>
+            <a href="https://www.instagram.com/darsan_gautam/" target="_blank">
+              <FontAwesomeIcon
+                className="icons"
+                id="insta"
+                icon={faInstagram}
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/darshan-gautam-886393226/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="icons"
+                id="linkedin"
+                icon={faLinkedin}
+              />
+            </a>
           </div>
         </div>
       </form>
