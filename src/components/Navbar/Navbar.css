@@ -14,22 +14,24 @@ a{
 .nav_container{
     display: flex;
     width: 100%;
+    margin-top: -5px;
     justify-content: center;
     align-items: center;
     padding: 0% 4%;
     position: fixed;
-    background-color: #181818;
+    background-color: #ffffff;
     opacity: 100%;
 }
 .nav_container a{
   margin-right: auto;
 }
 .nav_logo{
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border: 2px solid rgb(214,214,214);
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  /* object-fit: contain;
+  border: 2px solid rgb(214,214,214); */
+  /* border-radius: 50%; */
 }
 .items{
     display: inline-block;
@@ -38,15 +40,13 @@ a{
 .items a {
     transition: all 200ms ease-in-out;
     text-transform: uppercase;
-    color: rgb(214,214,214);
+    color: rgb(0, 0, 0);
   }
   .items a:hover {
-    color:rgb(255, 255, 255);
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(0, 0, 0);
   }
  .btn{
     padding: 9px 25px;
-    color:rgb(255, 255, 255);
     border: none;
     margin-left: 20px;
     display: none;
