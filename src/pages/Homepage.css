@@ -1,7 +1,10 @@
 .hero_container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    gap: 50px;
     background-color: rgb(67, 67, 67);
 }
 .des_container{
@@ -25,34 +28,39 @@
 
 }
 .profile{
-    margin-top: -10vh;
-    object-fit: fill;
+    align-items: center;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid  rgb(58, 56, 56);
+    background-color: rgb(217, 217, 217);
+
 }
 .home_Btn{
     display: flex;
     justify-content: flex-start;
     gap: 10px;
 }
-@media screen and (max-width:965px){
-    .profile{
-        align-items: center;
-        margin: 0;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        border:1px solid  rgb(58, 56, 56);
-        background-color: rgb(217, 217, 217);
-        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-    }
+@media screen and (max-width:1040px){
     .hero_container{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+        gap: 30px;
+    }
+    .des_container h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .des_container p{
+        font-size: 16px;
+    
+    }
+}
+@media screen and (max-width:770px){
+    .hero_container{
         gap: 30px;
         padding-top:15%;
         padding-bottom: 5%;
-        height: 100vh;
     }
     .des_container h1{
         font-size: 40px;

@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <div className="hero_container">
       <div className="des_container">
-        <h1>Darshan Gautam</h1>
+        <h1>Hi, I'm Darshan Gautam</h1>
         <p>
           Bachelors in Electronics and Communication Engineering.
           <br />
