@@ -40,15 +40,20 @@ input ,textarea
   
 }
 #submit {
-    margin: 5% auto 0px 0;
-    width: 100px;
-    height: 15px;
-    font-size: 16px;
-    padding: 10px 0 30px 0;
-    background-color: #ab1b1b;
-    color: rgb(214,214,214);
-    cursor: pointer;
-    border-radius: 2px;
+  width: auto;
+  margin:0px 4px;
+  padding:10px 16px;
+  align-items: center;
+  background-color: rgb(204,1,0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  font-family:Roboto, sans-serif;
+  font-weight:500;
+  font-size:14px;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
   }
   #submit:hover {
     color: black;
