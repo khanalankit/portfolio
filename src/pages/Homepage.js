@@ -1,6 +1,6 @@
 import React from "react";
 import "./Homepage.css";
-import profile from "../assets/profile-removebg.png";
+import profile from "../assets/profile_pic1.png";
 import resume from "../assets/Resume.pdf";
 
 const Homepage = () => {
