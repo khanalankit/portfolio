@@ -97,7 +97,7 @@ const Contact_me = () => {
           </label>
           {Object.keys(nameErr).map((key) => {
             return (
-              <div style={{ color: " #FF5733 ", marginTop: "-20px" }}>
+              <div style={{ color: " rgb(204,1,0) ", marginTop: "-20px" }}>
                 {nameErr[key]}
               </div>
             );
@@ -119,7 +119,7 @@ const Contact_me = () => {
 
           {Object.keys(emailErr).map((key) => {
             return (
-              <div style={{ color: " #FF5733 ", marginTop: "-20px" }}>
+              <div style={{ color: " rgb(204,1,0)", marginTop: "-20px" }}>
                 {emailErr[key]}
               </div>
             );
@@ -144,11 +144,12 @@ const Contact_me = () => {
           <br />
           {Object.keys(messageErr).map((key) => {
             return (
-              <div style={{ color: " #FF5733 ", marginTop: "-20px" }}>
+              <div style={{ color: " rgb(204,1,0) ", marginTop: "-20px" }}>
                 {messageErr[key]}
               </div>
             );
           })}
+          <br />
           <input type="submit" value="SEND" id="submit" />
         </div>
         <div className="socials">

@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <div className="hero_container">
       <div className="des_container">
-        <h1>Darshan Gautam</h1>
+        <h1>Hi, I'm Darshan Gautam</h1>
         <p>
           Bachelors in Electronics and Communication Engineering.
           <br />
@@ -15,10 +15,14 @@ const Homepage = () => {
         </p>
         <div className="home_Btn">
           <a href={resume} download="resume">
-            <button type="button">DOWNLOAD CV</button>
+            <button type="button" className="homeButton">
+              DOWNLOAD CV
+            </button>
           </a>
           <a href="/Contact_Me">
-            <button type="button">CONTACT ME</button>
+            <button type="button" className="homeButton">
+              CONTACT ME
+            </button>
           </a>
         </div>
       </div>

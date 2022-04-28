@@ -22,7 +22,7 @@ const My_projects = () => {
 
   return (
     <div className="wrapper">
-      <p>Here are some of my projects.</p>
+      <p>SOME OF MY PROJECTS.</p>
       <div className="card_container">
         {data &&
           data.map((data, index) => {
