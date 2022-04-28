@@ -21,21 +21,24 @@ const Contact_me = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const isValid = formValidation();
-    if (isValid) {
+    const isNameValid = nameValidation();
+    const isEmailValid = emailValidation();
+    const isMessageValid = messageValidation();
+    if (isNameValid) {
       //send this data to database or api
       setName("");
+    } else if (isEmailValid) {
       setEmail("");
+    } else if (isMessageValid) {
       setMessage("");
     }
   };
   var nameRegex = /^[ a-zA-Z]+$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-  const formValidation = () => {
+  //name validation
+  const nameValidation = () => {
     const nameErr = {};
-    const emailErr = {};
-    const messageErr = {};
     let isValid = true;
     if (name.trim().length < 1) {
       nameErr.nameEmpty = "Name is required";
@@ -44,6 +47,14 @@ const Contact_me = () => {
       nameErr.numName = "Invalid name";
       isValid = false;
     }
+    setNameErr(nameErr);
+    return isValid;
+  };
+
+  //email validation
+  const emailValidation = () => {
+    const emailErr = {};
+    let isValid = true;
     if (email.trim().length < 1) {
       emailErr.emailemp = "Email is required";
       isValid = false;
@@ -51,12 +62,18 @@ const Contact_me = () => {
       emailErr.emailName = "Invalid email";
       isValid = false;
     }
+    setEmailErr(emailErr);
+    return isValid;
+  };
+
+  //message validation
+  const messageValidation = () => {
+    const messageErr = {};
+    let isValid = true;
     if (message.trim().length < 10) {
       messageErr.msgtxt = "atleast 10 letters is required!!";
       isValid = false;
     }
-    setNameErr(nameErr);
-    setEmailErr(emailErr);
     setMessageErr(messageErr);
     return isValid;
   };
@@ -75,6 +92,7 @@ const Contact_me = () => {
               onChange={(e) => {
                 setName(e.target.value);
               }}
+              onBlur={nameValidation}
             />
           </label>
           {Object.keys(nameErr).map((key) => {
@@ -95,6 +113,7 @@ const Contact_me = () => {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
+              onBlur={emailValidation}
             />
           </label>
 
@@ -118,6 +137,7 @@ const Contact_me = () => {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              onBlur={messageValidation}
             />
           </span>
           <br />
