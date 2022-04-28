@@ -1,11 +1,12 @@
-import React from 'react'
-import Routing from './components/Routing'
+import React from "react";
+import Routing from "./components/Routing";
+import Contact_me from "./pages/Contact_me";
 const App = () => {
   return (
     <div>
-      <Routing/>
+      <Routing />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
