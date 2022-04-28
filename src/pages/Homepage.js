@@ -15,10 +15,14 @@ const Homepage = () => {
         </p>
         <div className="home_Btn">
           <a href={resume} download="resume">
-            <button type="button">DOWNLOAD CV</button>
+            <button type="button" className="homeButton">
+              DOWNLOAD CV
+            </button>
           </a>
           <a href="/Contact_Me">
-            <button type="button">CONTACT ME</button>
+            <button type="button" className="homeButton">
+              CONTACT ME
+            </button>
           </a>
         </div>
       </div>

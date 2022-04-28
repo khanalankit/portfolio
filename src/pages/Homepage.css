@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Playfair+Display&family=Roboto+Slab&family=Roboto:wght@700&display=swap');
-
 .hero_container{
     display: flex;
     justify-content: space-between;
     height: 100vh;
-    overflow: hidden;
     background-color: rgb(67, 67, 67);
 }
 .des_container{
@@ -29,6 +26,7 @@
 }
 .profile{
     margin-top: -10vh;
+    object-fit: fill;
 }
 .home_Btn{
     display: flex;
@@ -37,7 +35,34 @@
 }
 @media screen and (max-width:965px){
     .profile{
-        display: none;
+        align-items: center;
+        margin: 0;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border:1px solid  rgb(58, 56, 56);
+        background-color: rgb(217, 217, 217);
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    }
+    .hero_container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top:15%;
+        padding-bottom: 5%;
+        height: 100vh;
+    }
+    .des_container h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .des_container p{
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 14px;
+    
     }
 }
 
