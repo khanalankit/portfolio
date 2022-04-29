@@ -8,7 +8,11 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+
 import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
 
 const ContactMe = () => {
   const [name, setName] = useState("");
@@ -38,7 +42,7 @@ const ContactMe = () => {
             value
           );
           if (resp) {
-            alert("Message sent..");
+            toast("Message sent..");
           }
         } catch (err) {
           console.error(err, "error");
