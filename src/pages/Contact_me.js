@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Contact_me.css";
-import screen from "../assets/screen.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -9,6 +8,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import axios from "axios";
 
 const Contact_me = () => {
   const [name, setName] = useState("");
@@ -24,14 +24,33 @@ const Contact_me = () => {
     const isNameValid = nameValidation();
     const isEmailValid = emailValidation();
     const isMessageValid = messageValidation();
-    if (isNameValid) {
+    if (isNameValid && isEmailValid && isMessageValid) {
       //send this data to database or api
+      const value = {
+        name: name,
+        email: email,
+        message: message,
+      };
+      const setContactInfo = async () => {
+        try {
+          const resp = await axios.post(
+            "http://localhost:5003/api/contact",
+            value
+          );
+          if (resp) {
+            alert("Message sent..");
+          }
+        } catch (err) {
+          console.error(err, "error");
+        }
+      };
+      setContactInfo();
       setName("");
-    } else if (isEmailValid) {
       setEmail("");
-    } else if (isMessageValid) {
       setMessage("");
     }
+
+    // console.log(name, email, message);
   };
   var nameRegex = /^[ a-zA-Z]+$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -150,7 +169,7 @@ const Contact_me = () => {
             );
           })}
           <br />
-          <input type="submit" value="SEND" id="submit" />
+          <input type="submit" id="submit" />
         </div>
         <div className="socials">
           <div className="vertical_social">

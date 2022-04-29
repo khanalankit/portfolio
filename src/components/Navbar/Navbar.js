@@ -36,7 +36,7 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="items" onClick={toggleFlip}>
-              <NavLink to="/About_Me">About Me</NavLink>
+              <NavLink to="#">About Me</NavLink>
             </li>
             <li className="items" onClick={toggleFlip}>
               <NavLink to="/My_Projects">My Projects</NavLink>
