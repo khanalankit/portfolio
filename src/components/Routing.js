@@ -14,7 +14,7 @@ function Routing() {
         <Route path="/" element={<Homepage />} />
         <Route path="/My_Projects" element={<My_projects />} />
         <Route path="/Contact_Me" element={<Contact_me />} />
-        <Route path="/About_Me" element={<About_me />} />
+        {/* <Route path="/About_Me" element={<About_me />} /> */}
       </Routes>
       <Footer />
     </div>

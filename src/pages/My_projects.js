@@ -8,7 +8,7 @@ const My_projects = () => {
 
   async function getUser() {
     try {
-      const response = await axios.get("http://localhost:5002/api/card");
+      const response = await axios.get("http://localhost:5003/api/card");
       setData(response.data);
       console.log(response.data);
     } catch (error) {
