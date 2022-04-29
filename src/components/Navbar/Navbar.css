@@ -45,6 +45,10 @@ a{
     border-bottom: 2px solid  rgb(204,1,0);
      color: rgb(204,1,0);
   }
+  .active{
+    border-bottom: 2px solid  rgb(204,1,0);
+    color: rgb(204,1,0);
+  }
  .btn{
     padding: 9px 25px;
     border: none;
@@ -56,6 +60,7 @@ a{
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
+      align-items: center;
       padding: 0px;
   }
     .list{
@@ -73,7 +78,7 @@ a{
         align-self: end;
         margin: 10px 0;
     }
-    .nav_logo{
-      display: none;
-    }
+   .nav_logo{
+         display:none;
+   }
   }

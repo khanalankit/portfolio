@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/logo.png";
@@ -8,7 +8,6 @@ import "../Navbar/Navbar.css";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
   const toggleFlip = () => {
     setToggle(!toggle);
   };
@@ -26,23 +25,23 @@ const Navbar = () => {
 
   return (
     <div className="nav_container">
-      <NavLink to="/">
+      <Link to="/">
         <img className="nav_logo" src={logo} alt="logo" />
-      </NavLink>
+      </Link>
       {(toggle || screenWidth > 766) && (
         <nav>
           <ul className="list">
             <li className="items" onClick={toggleFlip}>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li className="items" onClick={toggleFlip}>
+            {/* <li className="items" onClick={toggleFlip}>
               <NavLink to="#">About Me</NavLink>
+            </li> */}
+            <li className="items" onClick={toggleFlip}>
+              <NavLink to="/myProjects">My Projects</NavLink>
             </li>
             <li className="items" onClick={toggleFlip}>
-              <NavLink to="/My_Projects">My Projects</NavLink>
-            </li>
-            <li className="items" onClick={toggleFlip}>
-              <NavLink to="/Contact_Me">Contact Me</NavLink>
+              <NavLink to="/contactMe">Contact Me</NavLink>
             </li>
           </ul>
         </nav>

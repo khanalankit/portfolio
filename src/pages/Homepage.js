@@ -1,5 +1,5 @@
 import React from "react";
-import "./Homepage.css";
+import "./homePage.css";
 import profile from "../assets/profile_pic1.png";
 import resume from "../assets/Resume.pdf";
 

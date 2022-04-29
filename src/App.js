@@ -1,6 +1,5 @@
 import React from "react";
-import Routing from "./components/Routing";
-import Contact_me from "./pages/Contact_me";
+import Routing from "./routes/Routing";
 const App = () => {
   return (
     <div>
