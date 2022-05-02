@@ -43,15 +43,17 @@ const ContactMe = () => {
           );
           if (resp) {
             toast("Message sent..");
+            setName("");
+            setEmail("");
+            setMessage("");
           }
         } catch (err) {
           console.error(err, "error");
+          
         }
       };
       setContactInfo();
-      setName("");
-      setEmail("");
-      setMessage("");
+     
     }
 
     // console.log(name, email, message);
