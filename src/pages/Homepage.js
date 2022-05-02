@@ -19,7 +19,7 @@ const Homepage = () => {
               DOWNLOAD CV
             </button>
           </a>
-          <a href="/Contact_Me">
+          <a href="/contactMe">
             <button type="button" className="homeButton">
               CONTACT ME
             </button>
