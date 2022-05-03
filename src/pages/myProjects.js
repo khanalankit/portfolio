@@ -8,7 +8,9 @@ const MyProjects = () => {
 
   async function getUser() {
     try {
-      const response = await axios.get("http://localhost:5003/api/card");
+      const response = await axios.get(
+        "https://portfoliodarshan.herokuapp.com/api/card"
+      );
       setData(response.data);
       console.log(response.data);
     } catch (error) {

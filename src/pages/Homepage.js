@@ -2,6 +2,7 @@ import React from "react";
 import "./homePage.css";
 import profile from "../assets/profile_pic1.png";
 import resume from "../assets/Resume.pdf";
+import {NavLink} from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -14,16 +15,16 @@ const Homepage = () => {
           Software Engineer intern at Optimum Futurist.
         </p>
         <div className="home_Btn">
-          <a href={resume} download="resume">
+          <NavLink to={resume} target="_blank" download="resume">
             <button type="button" className="homeButton">
               DOWNLOAD CV
             </button>
-          </a>
-          <a href="/contactMe">
+            </NavLink>
+          <NavLink to="/contactMe">
             <button type="button" className="homeButton">
               CONTACT ME
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
       <img className="profile" src={profile} alt="profile picture" />

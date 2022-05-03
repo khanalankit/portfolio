@@ -38,7 +38,7 @@ const ContactMe = () => {
       const setContactInfo = async () => {
         try {
           const resp = await axios.post(
-            "http://localhost:5003/api/contact",
+            "https://portfoliodarshan.herokuapp.com/api/contact",
             value
           );
           if (resp) {
@@ -49,11 +49,9 @@ const ContactMe = () => {
           }
         } catch (err) {
           console.error(err, "error");
-          
         }
       };
       setContactInfo();
-     
     }
 
     // console.log(name, email, message);
