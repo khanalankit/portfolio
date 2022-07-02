@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./contactMe.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -38,7 +38,7 @@ const ContactMe = () => {
       const setContactInfo = async () => {
         try {
           const resp = await axios.post(
-            "http://localhost:5003/api/contact",
+            "https://portfoliobackned.herokuapp.com/api/contact",
             value
           );
           if (resp) {

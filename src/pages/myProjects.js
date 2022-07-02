@@ -9,10 +9,9 @@ const MyProjects = () => {
   async function getUser() {
     try {
       const response = await axios.get(
-        "https://portfoliodarshan.herokuapp.com/api/card"
+        "https://portfoliobackned.herokuapp.com/api/card"
       );
       setData(response.data);
-      console.log(response.data);
     } catch (error) {
       console.log(error);
     }
