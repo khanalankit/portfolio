@@ -1,8 +1,8 @@
 import React from "react";
-import "./homePage.css";
+import "./Homepage.css";
 import profile from "../assets/profile_pic1.png";
 import resume from "../assets/Resume.pdf";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -19,7 +19,7 @@ const Homepage = () => {
             <button type="button" className="homeButton">
               DOWNLOAD CV
             </button>
-            </NavLink>
+          </NavLink>
           <NavLink to="/contactMe">
             <button type="button" className="homeButton">
               CONTACT ME
