@@ -12,7 +12,7 @@ const Homepage = () => {
         <p>
           Bachelors in Electronics and Communication Engineering.
           <br />
-          Software Engineer intern at Optimum Futurist.
+          Software Engineer.
         </p>
         <div className="home_Btn">
           <NavLink to={resume} target="_blank" download="resume">
