@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./aboutMe.css";
-const About_me = () => {
+const AboutMe = () => {
   return (
     <div className="wrapper">
       <h1>My Blogs</h1>
@@ -9,4 +9,4 @@ const About_me = () => {
   );
 };
 
-export default About_me;
+export default AboutMe;
