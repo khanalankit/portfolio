@@ -25,11 +25,11 @@ function Card(props) {
           ? props.card_body
           : "This is a project click below to see more."}
       </div>
-      <div className="card_footer">
+      {/* <div className="card_footer">
         <a href={props.link} target="_blank">
           <button type="button">View source</button>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

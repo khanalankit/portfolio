@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebook,
-  faGithub,
   faLinkedin,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./Footer.css";
@@ -16,13 +16,13 @@ const Footer = () => {
         <p>Copyright @2022 | Designed by Darshan Gautam</p>
       </div>
       <div className="footer_socials">
-        <a href="https://github.com/darsan012" target="_blank">
-          <FontAwesomeIcon className="fa_icons" icon={faGithub} />
+        <a href="https://twitter.com/astro_jr_ak" target="_blank">
+          <FontAwesomeIcon className="fa_icons" icon={faTwitter} />
         </a>
-        <a href="https://www.facebook.com/darsan.gautam.9" target="_blank">
+        <a href="https://www.facebook.com/ankit.khanal.5454/" target="_blank">
           <FontAwesomeIcon className="fa_icons" icon={faFacebook} />
         </a>
-        <a href="https://www.instagram.com/darsan_gautam/" target="_blank">
+        <a href="https://www.instagram.com/astro_jr_ak/" target="_blank">
           <FontAwesomeIcon className="fa_icons" icon={faInstagram} />
         </a>
         <a

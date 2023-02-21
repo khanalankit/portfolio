@@ -34,11 +34,14 @@ const Navbar = () => {
             <li className="items" onClick={toggleFlip}>
               <NavLink to="/">Home</NavLink>
             </li>
-            {/* <li className="items" onClick={toggleFlip}>
-              <NavLink to="#">About Me</NavLink>
-            </li> */}
+            <li className="items" onClick={toggleFlip}>
+              <NavLink to="/aboutMe">About Me</NavLink>
+            </li>
             <li className="items" onClick={toggleFlip}>
               <NavLink to="/myProjects">My Projects</NavLink>
+            </li>
+            <li className="items" onClick={toggleFlip}>
+              <NavLink to="/myAffiliation">My Affiliation</NavLink>
             </li>
             <li className="items" onClick={toggleFlip}>
               <NavLink to="/contactMe">Contact Me</NavLink>

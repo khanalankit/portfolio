@@ -5,8 +5,8 @@ import { faHome, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagram,
   faFacebook,
-  faGithub,
   faLinkedin,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 import axios from "axios";
@@ -179,29 +179,29 @@ const ContactMe = () => {
           <div className="vertical_social">
             <div className="info">
               <FontAwesomeIcon className="icons" icon={faHome} />
-              <p>Kupondole,Lalitpur</p>
+              <p>Nagarjun-6,Kathmandu</p>
             </div>
             <div className="info">
               <FontAwesomeIcon className="icons" icon={faPhone} />
-              <p>+977 9848941269</p>
+              <p>+977 9863330067</p>
             </div>
             <div className="info">
               <FontAwesomeIcon className="icons" icon={faEnvelope} />
-              <p>dsrsangautam@gmail.com</p>
+              <p>akkhanal2000@gmail.com</p>
             </div>
           </div>
           <div className="horizontal_socials">
-            <a href="https://github.com/darsan012" target="_blank">
-              <FontAwesomeIcon className="icons" id="github" icon={faGithub} />
+            <a href="https://twitter.com/astro_jr_ak" target="_blank">
+              <FontAwesomeIcon className="icons" id="twitter" icon={faTwitter} />
             </a>
-            <a href="https://www.facebook.com/darsan.gautam.9" target="_blank">
+            <a href="https://www.facebook.com/ankit.khanal.5454/" target="_blank">
               <FontAwesomeIcon
                 className="icons"
                 id="facebook"
                 icon={faFacebook}
               />
             </a>
-            <a href="https://www.instagram.com/darsan_gautam/" target="_blank">
+            <a href="https://www.instagram.com/astro_jr_ak/" target="_blank">
               <FontAwesomeIcon
                 className="icons"
                 id="insta"
@@ -209,7 +209,7 @@ const ContactMe = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/darshan-gautam-886393226/"
+              href="https://www.linkedin.com/in/ankit-khanal-b49010176"
               target="_blank"
             >
               <FontAwesomeIcon

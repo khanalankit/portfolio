@@ -1,26 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card/Card";
-import "./myProjects.css";
-import axios from "axios";
+import "./aboutMe.css";
+import { data } from "../data/aboutMe";
 
 const MyProjects = () => {
-  const [data, setData] = useState(null);
-
-  async function getUser() {
-    try {
-      const response = await axios.get(
-        "https://portfoliobackned.herokuapp.com/api/card"
-      );
-      setData(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  useEffect(() => {
-    getUser();
-  }, []);
-
   return (
     <div className="wrapper">
       <p>SOME OF MY PROJECTS.</p>
