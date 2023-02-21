@@ -26,7 +26,7 @@ const Footer = () => {
           <FontAwesomeIcon className="fa_icons" icon={faInstagram} />
         </a>
         <a
-          href="https://www.linkedin.com/in/darshan-gautam-886393226/"
+          href="https://www.linkedin.com/in/ankit-khanal-b49010176"
           target="_blank"
         >
           <FontAwesomeIcon className="fa_icons" icon={faLinkedin} />
