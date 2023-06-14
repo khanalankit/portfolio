@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.jpg";
 import "../Navbar/Navbar.css";
 
 const Navbar = () => {

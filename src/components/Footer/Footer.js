@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="footer_container">
       <div className="copyright">
-        <p>Copyright @2022 | Designed by Darshan Gautam</p>
+        <p>Copyright @2022 | Designed by Ankit Khanal</p>
       </div>
       <div className="footer_socials">
         <a href="https://twitter.com/astro_jr_ak" target="_blank">
