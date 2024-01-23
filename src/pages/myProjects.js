@@ -16,6 +16,7 @@ const MyProjects = () => {
                 card_header={data.projectTitle}
                 card_body={data.projectBody}
                 link={data.projectLink}
+                picture={data.picture}
               />
             );
           })}
