@@ -10,7 +10,7 @@ function Card(props) {
         className="pic"
       />
       <div className="card_header">
-        <h4>{props.card_header}</h4>
+        <a href={props.link}><h4>{props.card_header}</h4></a>
       </div>
       <div className="card_body">
         {props.card_body

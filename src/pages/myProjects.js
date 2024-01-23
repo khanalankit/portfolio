@@ -15,7 +15,7 @@ const MyProjects = () => {
                 key={index}
                 card_header={data.projectTitle}
                 card_body={data.projectBody}
-                link={data.projectLink}
+                link={data.link}
                 picture={data.picture}
               />
             );
