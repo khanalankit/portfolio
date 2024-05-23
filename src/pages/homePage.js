@@ -1,7 +1,7 @@
 import React from "react";
 import "./homePage.css";
 import profile from "../assets/profile_pic1.jpg";
-import resume from "../assets/Resume.pdf";
+import resume from "../assets/CV.pdf";
 import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
@@ -15,7 +15,7 @@ const Homepage = () => {
           Aspiring Astronaut.
         </p>
         <div className="home_Btn">
-          <NavLink to={resume} target="_blank" download="resume">
+          <NavLink to={resume} target="_blank" download="CV">
             <button type="button" className="homeButton">
               DOWNLOAD CV
             </button>
