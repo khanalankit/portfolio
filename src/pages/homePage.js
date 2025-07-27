@@ -15,11 +15,11 @@ const Homepage = () => {
           Aspiring Astronaut.
         </p>
         <div className="home_Btn">
-          <NavLink to={resume} target="_blank" download="CV">
+          <a href="https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/ankit+-khanal+/0f1178eb-1639-4882-89e0-3dd5c0171002?view=html" target="_blank" download="CV">
             <button type="button" className="homeButton">
               DOWNLOAD CV
             </button>
-          </NavLink>
+          </a>
           <NavLink to="/contactMe">
             <button type="button" className="homeButton">
               CONTACT ME

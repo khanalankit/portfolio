@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="footer_container">
       <div className="copyright">
-        <p>Copyright @2024 | Designed by Ankit Khanal</p>
+        <p>Copyright @{new Date().getFullYear()} | Designed by Ankit Khanal</p>
       </div>
       <div className="footer_socials">
         <a href="https://twitter.com/astro_jr_ak" target="_blank">
@@ -31,6 +31,21 @@ const Footer = () => {
         >
           <FontAwesomeIcon className="fa_icons" icon={faLinkedin} />
         </a>
+        <a
+      id="cy-effective-orcid-url"
+      className="underline"
+      href="https://orcid.org/0000-0003-0573-3978"
+      target="orcid.widget"
+      rel="me noopener noreferrer"
+      style={{ verticalAlign: 'top' }}
+    >
+      <img
+        src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+        style={{ width: '1em', marginInlineStart: '0.5em' }}
+        alt="ORCID iD icon"
+      />
+      https://orcid.org/0000-0003-0573-3978
+    </a>
       </div>
     </div>
   );

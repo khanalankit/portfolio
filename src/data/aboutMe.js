@@ -4,7 +4,7 @@ import outreach from "../assets/outreach.jpg";
 import research from "../assets/Screenshot 2024-01-23 at 10.16.22.png";
 import iac23 from "../assets/Ankit_IAC2023 (1)_page-0001.jpg";
 import coy18 from "../assets/Green Colorful Climate Change Prevention Branding LinkedIn Banner (18 x 12 in) (2).png";
-
+import iafesl2025 from "../assets/ESL2025_2.95657b21.png";
 export const data = [{
     projectTitle: "DATA ETHICS TOOLKIT A Toolkit for Data Ethics in the Participatory Sciences",
     projectBody: "Developed toolkit for data ethics in the participatory sciences.",
@@ -21,10 +21,10 @@ export const data = [{
     link: "https://www.researchgate.net/profile/Ankit-Khanal-4",
     picture: research,
 },{
-    projectTitle: "Book on Space History around the World",
-    projectBody: "As a Committee Member of Advisory Committee on History Activities at International Astronautical Federation(IAF) I have been envolved in writing a book on Space History of World",
+    projectTitle: "Article on History of Space Industry in Asia",
+    projectBody: "As a Committee Member of Advisory Committee on History Activities at International Astronautical Federation(IAF) I have been envolved in writing a article on History of Space Industry",
     picture: bookHistory,
-    link: "https://www.iafastro.org/about/iaf-committees/administrative-committees/iaf-iaa-iisl-advisory-committee-on-history-activities-acha.html",
+    link: "https://doi.org/10.1016/j.actaastro.2025.06.019",
 },{
     projectTitle: "Outreach in Community School of Nepal",
     projectBody: "",
@@ -41,7 +41,12 @@ export const data = [{
     projectBody: "",
     picture: coy18,
     link: "https://acem.edu.np/news/details/congratulations-mr-ankit-khanal-118/",
-}
+},{
+    projectTitle: "IAF Emerging Space Leader (ESL) Award 2025",
+    projectBody: "",
+    picture: iafesl2025,
+    link: "https://www.iafastro.org/news/the-iaf-is-proud-to-introduce-the-2025-iaf-emerging-space-leaders.html",
+},
 ]
 
 
